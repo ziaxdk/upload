@@ -20,6 +20,7 @@ npm install -g typings
 npm install
 typings install
 tsc
+npm start
 ```
 
 
