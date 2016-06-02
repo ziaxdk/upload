@@ -1,7 +1,7 @@
 {
   "name": "upload",
   "version": "0.4.0",
-  "description": "his small server accepts uploads from HTTP POST",
+  "description": "This small server accepts uploads from HTTP POST",
   "main": "server.js",
   "scripts": {
   },
