@@ -30,3 +30,7 @@ npm start
 curl -i -F ziax=@[filename_here] http://localhost:3000/upload
 
 ```
+
+## License
+
+[MIT](LICENSE)
