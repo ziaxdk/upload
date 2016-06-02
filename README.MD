@@ -26,9 +26,17 @@ npm start
 ## Upload to server with CURL
 
 ```
-curl -i -F ziax=@[filename_here] http://localhost:3000/upload
+curl -i --user user:pass -F ziax=@[filename_here] http://localhost:3000/upload
 
 ```
+
+### Todo
+
+```
+curl --upload-file [filename_here] http://localhost:3000/upload
+```
+
+[https://curl.haxx.se/docs/httpscripting.html#PUT]
 
 ## License
 
