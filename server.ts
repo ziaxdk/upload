@@ -20,13 +20,13 @@ let storage = Multer.diskStorage({
 let upload = Multer({ storage: storage })
 
 /* BasicAuth */
-var auth = function(req, res, next) {
+let auth = function(req, res, next) {
   function unauthorized(res) {
     res.set('WWW-Authenticate', 'Basic realm=Authorization Required');
     return res.sendStatus(401);
   };
 
-  var user = BasicAuth(req);
+  let user = BasicAuth(req);
 
   if (!user || !user.name || !user.pass) {
     return unauthorized(res);
