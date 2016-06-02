@@ -43,6 +43,7 @@ let auth = function(req, res, next) {
 let app = Express();
 
 app.post('/upload', auth, upload.single('ziax'), function(req, res, next) {
+  console.log('ok');
   res.sendStatus(200);
 });
 
