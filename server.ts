@@ -4,7 +4,7 @@ import * as Multer from 'multer';
 let uploadPath = process.env.uploadPath || './uploads';
 let port = process.env.port || 3000;
 
-var storage = Multer.diskStorage({
+let storage = Multer.diskStorage({
   destination: function(req, file, cb) {
     cb(null, uploadPath)
   },
@@ -13,9 +13,9 @@ var storage = Multer.diskStorage({
   }
 })
 
-var upload = Multer({ storage: storage })
+let upload = Multer({ storage: storage })
 
-var app = Express();
+let app = Express();
 
 app.post('/upload', upload.single('ziax'), function(req, res, next) {
   res.sendStatus(200);
