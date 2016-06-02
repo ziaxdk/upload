@@ -1,4 +1,4 @@
-FROM node:4.4.5-slim
+FROM node:4.4.5
 MAINTAINER ZiaxDK
 
 RUN mkdir -p /usr/src/app
