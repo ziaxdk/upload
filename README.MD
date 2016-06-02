@@ -22,7 +22,14 @@ tsc
 npm start
 ```
 
+## Docker
 
+```
+docker pull ziaxdk/upload
+docker run -it --rm --name upload ziaxdk/upload
+docker run -it --rm --name upload -p 80:80 -v /home/:/usr/src/app/uploads/ -e port=80 -e user=foo -e pass=bar ziaxdk/upload
+
+```
 ## Upload to server with CURL
 
 ```

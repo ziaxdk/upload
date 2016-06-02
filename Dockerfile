@@ -1,7 +1,7 @@
-FROM node:4.4.5
+FROM node:4.4.5-slim
 MAINTAINER ZiaxDK
 
-RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app/uploads
 WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app/
