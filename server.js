@@ -39,6 +39,7 @@ var auth = function (req, res, next) {
 /* Express */
 var app = Express();
 app.post('/upload', auth, upload.single('ziax'), function (req, res, next) {
+    console.log('ok');
     res.sendStatus(200);
 });
 app.listen(port, function () {
