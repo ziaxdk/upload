@@ -22,19 +22,16 @@ var auth = function (req, res, next) {
         res.set('WWW-Authenticate', 'Basic realm=Authorization Required');
         return res.sendStatus(401);
     }
-    ;
     var user = BasicAuth(req);
     if (!user || !user.name || !user.pass) {
         return unauthorized(res);
     }
-    ;
     if (user.name === username_ && user.pass === password_) {
         return next();
     }
     else {
         return unauthorized(res);
     }
-    ;
 };
 /* Express */
 var app = Express();
